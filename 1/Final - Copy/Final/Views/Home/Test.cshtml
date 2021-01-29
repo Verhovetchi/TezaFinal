@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+
+@foreach (var item in ViewBag.Images)
+{
+     <img src="~/Content/imgTeams/@item.Path" style="width:30px; height:30px;"/>
+}
+
