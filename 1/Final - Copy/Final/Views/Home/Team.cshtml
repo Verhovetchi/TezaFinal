@@ -32,23 +32,115 @@
                          <tbody>
                               @foreach (var item in ViewBag.Players)
                               {
-                                   <tr>
-                                        <td class="table-info">@item.Number</td>
+                              <tr>
+                                   <td class="table-info">@item.Number</td>
+                                   @if (item.TeamId == 2)
+                                   {
+
+                                        switch (item.Name)
+                                        {
+                                             case "Marc-Andre":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/1">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Serginio":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/2">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Gerard":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/3">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Ronald":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/4">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Sergio":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/5">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Antoine":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/7">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Miralem":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/8">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Martin":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/9">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Lionel":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/10">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             case "Ousmane":
+                                                  {
+                                                       <td>
+                                                            <a href="~/Home/Statistics/11">@item.Name</a>
+                                                       </td>
+
+                                                       break;
+                                                  }
+                                             default:
+                                                  {
+                                                       <td>
+                                                            @item.Name
+                                                       </td>
+                                                       break;
+                                                  }
+                                        }
+                                   }
+                                   else
+                                   {
                                         <td>@item.Name</td>
-                                        <td>@item.Surname</td>
-                                        <td>@item.Age(item.Born_Date)</td>
-                                        <td>@item.Position</td>
-                                        <td>@item.Height</td>
-                                        <td>@item.Weight</td>
-                                   </tr>
+                                   }
+                                   <td>@item.Surname</td>
+                                   <td>@item.Age(item.Born_Date)</td>
+                                   <td>@item.Position</td>
+                                   <td>@item.Height</td>
+                                   <td>@item.Weight</td>
+                              </tr>
                               }
                          </tbody>
                     </table>
-
-
-
-
-
                </div>
                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>

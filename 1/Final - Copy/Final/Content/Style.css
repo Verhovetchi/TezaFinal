@@ -96,7 +96,9 @@ footer {
 .table td, .table th{
      text-align:center;
      text-decoration:none;
-     border-radius:20px;
+     border-radius:10px;
+     padding:0px;
+     vertical-align:inherit;
 }
 
 td.alig{

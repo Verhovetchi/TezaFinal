@@ -307,6 +307,12 @@
     <Content Include="Views\Home\SendEmail.cshtml" />
     <Content Include="Views\Home\Privacy.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Iniesta.cshtml" />
+    <Content Include="Views\Home\Statistics.cshtml" />
+    <Content Include="Views\Home\CreatePlayer.cshtml" />
+    <Content Include="Views\Home\AllPlayers.cshtml" />
+    <Content Include="Views\Home\DeletePlayer.cshtml" />
+    <Content Include="Views\Home\EditPlayer.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
