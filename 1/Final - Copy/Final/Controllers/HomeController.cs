@@ -35,7 +35,6 @@ namespace Final.Controllers
 
           public ActionResult Clasament()
           {
-
                return PartialView();
           }
 
@@ -157,15 +156,12 @@ namespace Final.Controllers
                return View();
           }
 
-          public ActionResult Iniesta()
-          {
-               return View();
-          }
+          
 
-          public ActionResult Iniesta2()
-          {
-               return View();
-          }
+          //public ActionResult Iniesta2()
+          //{
+          //     return View();
+          //}
 
           [HttpGet]
           public ActionResult AllPlayers()
@@ -226,6 +222,7 @@ namespace Final.Controllers
 
                SelectList teams = new SelectList(soccerDB.Teams, "Id", "Name");
                ViewBag.Teams = teams;
+               ViewBag.Position = new List<string>() { "Midfield", "Goalkeeper" };
 
                if (player != null)
                     return View(player);

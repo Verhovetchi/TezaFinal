@@ -198,6 +198,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LegendsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -307,14 +308,18 @@
     <Content Include="Views\Home\SendEmail.cshtml" />
     <Content Include="Views\Home\Privacy.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Iniesta.cshtml" />
+    <Content Include="Views\Legends\Iniesta.cshtml" />
     <Content Include="Views\Home\Statistics.cshtml" />
     <Content Include="Views\Home\CreatePlayer.cshtml" />
     <Content Include="Views\Home\AllPlayers.cshtml" />
     <Content Include="Views\Home\DeletePlayer.cshtml" />
     <Content Include="Views\Home\EditPlayer.cshtml" />
+    <Content Include="Views\Legends\Clasament.cshtml" />
+    <Content Include="Views\Legends\Valdes.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\NewFolder1\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
